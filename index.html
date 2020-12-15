@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+    <div class="main-header"><h1 id="title">Our Survey Form</h1></div> 
+   <div class="wrapper"> 
+       <form id="survey-form">
+        <label for="name-label" id="name-label">First Name</label>
+        <input type="text" placeholder="Enter your name"  id="name" required><br><br>
+        <label for="email-label" id="email-label">Email</label><br>
+        <input type="email" placeholder="Enter your email"  id="email" required ><br><br>
+        <label for="number-label" id="number-label">Age(optional)</label><br>
+        <input type="number" placeholder="Enter"  id="number" min="7" max="99"><br><br>
+        <label for="fname">Which course you like the most?</label><br>
+        <select id="dropdown">
+            <option value="first">Select on the list below</option>
+            <option value="">Course One - Hors d'oeuvres</option>
+            <option value="second">Course Two - Amuse-bouche</option>
+            <option value="third">Course Three - Soup</option>  
+            <option value="fourth">Course Four – Appetizer</option>
+            <option value="fifth">Course Five - Salad</option>
+            <option value="sixth">Course Six – Fish</option>
+            <option value="seven">Course Seven – First main course</option>
+            <option value="eight">Course Eight – Palate Cleanser</option>
+            <option value="ninght">Course Nine - Second main course</option>
+            <option value="tenth">Course Ten - Cheese course</option>
+            <option value="eleventh">Course Eleven - Dessert</option>
+            <option value="twelveth">Course Twelve – Mignardise</option>
+        </select>
+       <br><br>
+       <div class="radio">
+            <label for="definitely">Would you like to recommend this to your friends?</label><br>
+            <input type="radio" name="radio" value="definitely">
+            <label for="definitely">Definitely</label><br>
+
+            <input type="radio" name="radio" value="maybe">
+            <label for="maybe">Maybe</label><br>
+       
+            <input type="radio" name="radio" value="notesure">
+            <label for="notesure">Note sure</label><br>
+        </div>
+     <br>
+        <div class="checkbox">
+            <label for="notesure">What do we need to improve?</label><br>
+            <input type="checkbox" value="main">
+            <label for="check1">Main Course</label><br>
+            <input type="checkbox" value="drinks">
+            <label for="check2">Drinks</label><br>
+            <input type="checkbox" value="service">
+            <label for="check3">Service</label><br>
+            <input type="checkbox" value="dessert">
+            <label for="check4">Dessert</label><br>  
+            <input type="checkbox" name="soup" value="soup"       >
+            <label for="check5">Soup</label><br>  
+        </div>
+        <br>
+            <label for="textarea">Write your comments and feedbacks below:</label><br>
+            <textarea  placeholder="Enter your comment here"></textarea>
+        
+        <br>
+            <input type="submit" id="submit" value="SUBMIT" >
+    </form>
+    
+    </div> 
+
+</div>
+
+</body>
+</html>
